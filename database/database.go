@@ -9,8 +9,6 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-/* Used to create a singleton object of MongoDB client.
-Initialized and exposed through  GetMongoClient().*/
 var clientInstance *mongo.Client
 
 //Used during creation of singleton client object in GetMongoClient().

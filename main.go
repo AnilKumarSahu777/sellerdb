@@ -70,7 +70,6 @@ func homepage(w http.ResponseWriter, r *http.Request) {
 func handleRequests() {
 	// creates a new instance of a mux router
 	myRouter := mux.NewRouter()
-	// replace http.HandleFunc with myRouter.HandleFunc
 	myRouter.HandleFunc("/", homepage).Methods("POST")
 	log.Fatal(http.ListenAndServe(":10091", myRouter))
 }
