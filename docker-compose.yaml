@@ -2,7 +2,6 @@ version: "3"
 
 services:
   myapp:
-    build: .
     image: sellerdb
     ports:
       - 10091:10091
