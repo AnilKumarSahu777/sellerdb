@@ -40,7 +40,6 @@ type DBMODEL struct {
 }
 
 func homepage(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Welcome to the HomePage!")
 	var body REQUEST
 	decoder := json.NewDecoder(r.Body)
 	err := decoder.Decode(&body)
